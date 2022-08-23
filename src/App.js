@@ -1,3 +1,5 @@
+import Calculator from "./components/Calculator";
+
 function App() {
   return (
     <div className="calculator-grid">
@@ -5,7 +7,11 @@ function App() {
         <div className="previous-operand">
           <h1>calculator Operand</h1>
         </div>
-        <div className="current-operand"></div>
+        <div className="current-operand">
+        <h1>calculator current Operand</h1>
+
+        <Calculator/>
+        </div>
       </div>
     </div>
   )
