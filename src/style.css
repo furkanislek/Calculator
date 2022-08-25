@@ -1,0 +1,8 @@
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: linear-gradient(to right, rgb(110, 101, 190), rgba(16, 168, 11, 0.067));
+}
