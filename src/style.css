@@ -4,5 +4,54 @@
 
 body{
     margin: 0;
-    background: linear-gradient(to right, rgb(110, 101, 190), rgba(16, 168, 11, 0.067));
+    background: linear-gradient(to left, rgb(110, 101, 190), rgba(16, 168, 11, 0.067));
 }
+
+.calculator-grid{
+    display:  grid;
+    margin-top: 2rem;
+    justify-content: center;
+    grid-template-columns: repeat(4,6.5rem);
+    grid-template-rows: minmax(7rem,auto) repeat(5,6.5rem);
+}
+
+.span-two{
+    grid-column: span 2;
+    text-align: center;
+    
+}
+
+.calculator-grid > div {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgb(255, 237, 217);
+}
+
+.calculator-grid > div:hover,
+.calculator-grid > div:focus{
+    background-color: rgba(255, 237, 217,.8);
+}
+
+
+
+div > .btn{
+    text-align: center;
+    
+
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: rgb(240, 217, 191) !important;
+    display: flex;
+    color: rgb(104, 9, 9);
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 0.75rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
