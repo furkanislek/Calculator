@@ -1,11 +1,8 @@
-import {useState, useEffect} from "react"
-import NumberFormat from "react-number-format"
-import "./style.css"
-
-
+import { useState, useEffect } from "react";
+import NumberFormat from "react-number-format";
+import "./style.css";
 
 function App() {
-
   const [preState, setPreState] = useState("");
   const [curState, setCurState] = useState("");
   const [input, setInput] = useState("0");
@@ -96,76 +93,76 @@ function App() {
       <div className="output">
         <div className="previous-operand"> </div>
         {input !== "" || input === "0" ? (
-            <NumberFormat
-              value={input}
-              displayType={"text"}
-              thousandSeparator={true}
-            />
-          ) : (
-            <NumberFormat
-              value={preState}
-              displayType={"text"}
-              thousandSeparator={true}
-            />
-          )}
-        </div>
-        <div className='btn light-gray' onClick={reset}>
-         <p>AC</p> 
-        </div>
-        <div className='btn light-gray' onClick={percent}>
-        <p>%</p> 
-        </div>
-        <div className='btn light-gray' onClick={minusPlus}>
-        <p>+/-</p> 
-        </div>
-        <div className='btn orange' onClick={operatorType}>
-        <p>/</p> 
-        </div>
-        <div className='btn' onClick={inputNum}>
-        <p>7</p> 
-        </div>
-        <div className='btn' onClick={inputNum}>
-        <p>8</p> 
-        </div>
-        <div className='btn' onClick={inputNum}>
-        <p>9</p> 
-        </div>
-        <div className='btn orange' onClick={operatorType}>
+          <NumberFormat
+            value={input}
+            displayType={"text"}
+            thousandSeparator={true}
+          />
+        ) : (
+          <NumberFormat
+            value={preState}
+            displayType={"text"}
+            thousandSeparator={true}
+          />
+        )}
+      </div>
+      <div className="btn light-gray" onClick={reset}>
+        <p>AC</p>
+      </div>
+      <div className="btn light-gray" onClick={percent}>
+        <p>%</p>
+      </div>
+      <div className="btn light-gray" onClick={minusPlus}>
+        <p>+/-</p>
+      </div>
+      <div className="btn orange" onClick={operatorType}>
+        <p>/</p>
+      </div>
+      <div className="btn" onClick={inputNum}>
+        <p>7</p>
+      </div>
+      <div className="btn" onClick={inputNum}>
+        <p>8</p>
+      </div>
+      <div className="btn" onClick={inputNum}>
+        <p>9</p>
+      </div>
+      <div className="btn orange" onClick={operatorType}>
         <p>X</p>
-        </div>
-        <div className='btn' onClick={inputNum}>
-        <p>4</p> 
-        </div>
-        <div className='btn' onClick={inputNum}>
-        <p>5</p>  
-        </div>
-        <div className='btn' onClick={inputNum}>
-        <p>6</p> 
-        </div>
-        <div className='btn orange' onClick={operatorType}>
+      </div>
+      <div className="btn" onClick={inputNum}>
+        <p>4</p>
+      </div>
+      <div className="btn" onClick={inputNum}>
+        <p>5</p>
+      </div>
+      <div className="btn" onClick={inputNum}>
+        <p>6</p>
+      </div>
+      <div className="btn orange" onClick={operatorType}>
         <p>+</p>
-        </div>
-        <div className='btn' onClick={inputNum}>
+      </div>
+      <div className="btn" onClick={inputNum}>
         <p>1</p>
-        </div>
-        <div className='btn' onClick={inputNum}>
+      </div>
+      <div className="btn" onClick={inputNum}>
         <p>2</p>
-        </div>
-        <div className='btn' onClick={inputNum}>
+      </div>
+      <div className="btn" onClick={inputNum}>
         <p>3</p>
-        </div>
-        <div className='btn orange' onClick={operatorType}>
+      </div>
+      <div className="btn orange" onClick={operatorType}>
         <p>-</p>
-        </div>
-        <div className='btn zero' onClick={inputNum}>
+      </div>
+      <div className="btn zero" onClick={inputNum}>
         <p>0</p>
-        </div>
-        <div className='btn' onClick={inputNum}>
-        <p>.</p>  
-        </div>
-        <div className='btn span-two' onClick={equals}>
-         <p>=</p> 
-        </div>
+      </div>
+      <div className="btn" onClick={inputNum}>
+        <p>.</p>
+      </div>
+      <div className="btn span-two" onClick={equals}>
+        <p>=</p>
+      </div>
     </div>
   );
 }
