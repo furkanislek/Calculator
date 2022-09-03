@@ -7,7 +7,7 @@ body {
   margin: 0;
   background: linear-gradient(
     to left,
-    rgb(110, 101, 190, 1),
+    rgb(110, 101, 190, 0,9),
     rgba(16, 168, 11, 0.054)
   );
 }
